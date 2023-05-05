@@ -10,7 +10,7 @@ use App\Models\Foco;
 class FocoController extends Controller
 {
     public function index() {
-        $focos = Foco::paginate(2);
+        $focos = Foco::all();
 
         return $focos;
     }
